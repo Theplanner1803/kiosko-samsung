@@ -13,11 +13,13 @@ Es un sitio estático (HTML, CSS y JS sin compilación): se sube tal cual a cual
 4. **Recomendado**: crea un formulario gratuito en [Formspree](https://formspree.io) y pon su URL en `quoteEndpoint`.
    Así queda registrada cada solicitud aunque el cliente no termine de enviar el WhatsApp.
 
-## Publicar
+## Publicación
 
-- **Netlify (lo más rápido)**: entra a app.netlify.com/drop y arrastra la carpeta `kiosko-samsung`.
-- **Vercel / GitHub Pages / hosting tradicional**: sube el contenido de la carpeta. No necesita build.
-- Después conecta tu dominio y agrega `<link rel="canonical">` y `og:url` en `index.html` con la URL final.
+- **En línea**: https://theplanner1803.github.io/kiosko-samsung/
+- **Hosting**: GitHub Pages, repositorio `Theplanner1803/kiosko-samsung`, rama `main`, carpeta raíz.
+- **Publicar cambios**: haz commit y `git push` a `main`; GitHub Pages se actualiza solo en 1–2 minutos.
+- **Dominio propio**: en GitHub → Settings → Pages → Custom domain. Después actualiza `canonical`, `og:url`
+  y `og:image` en `index.html` con el dominio nuevo.
 
 Cuando cambies CSS o JS, sube el número `?v=5` en las etiquetas `<link>` y `<script>` para que los visitantes no vean versiones en caché.
 
