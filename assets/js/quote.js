@@ -43,6 +43,7 @@
       city: clean(form.elements.city.value),
       email: clean(form.elements.email.value).toLowerCase(),
       privacy: form.elements.privacy.checked,
+      marketing: form.elements.marketing.checked,
     };
   }
 
@@ -91,6 +92,7 @@
       "Teléfono: " + c.phone,
       "Ciudad: " + c.city,
       c.email ? "Correo: " + c.email : null,
+      "Acepta recibir promociones: " + (c.marketing ? "sí" : "no"),
     ].filter((l) => l !== null).join("\n");
   }
 

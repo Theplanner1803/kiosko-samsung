@@ -6,8 +6,9 @@ Es un sitio estático (HTML, CSS y JS sin compilación): se sube tal cual a cual
 ## Antes de publicar (obligatorio)
 
 1. **`assets/js/config.js`**: WhatsApp ya configurado (`529982938225`). Agrega `salesEmail` si quieres respaldo por correo.
-2. **`aviso-privacidad.html`**: completa razón social, domicilio y correo, y valídalo con tu asesor legal.
-   La ley mexicana (LFPDPPP) lo exige porque el formulario recaba datos personales.
+2. **Aviso de privacidad**: el aviso integral (`aviso-privacidad.html`) y el simplificado del formulario (`index.html`)
+   siguen los arts. 15 y 16 de la LFPDPPP vigente (DOF 20-03-2025, última reforma 14-11-2025). Faltan dos datos,
+   marcados en naranja con la clase `pending`: nombre completo del responsable y domicilio. Valídalo con tu asesor legal.
 3. **Nombre de marca**: "Kioskia" es provisional. Para cambiarlo, busca y reemplaza `Kioskia` en `index.html`,
    `aviso-privacidad.html` y `assets/js/kiosk-sim.js`.
 4. **Recomendado**: crea un formulario gratuito en [Formspree](https://formspree.io) y pon su URL en `quoteEndpoint`.
@@ -21,7 +22,7 @@ Es un sitio estático (HTML, CSS y JS sin compilación): se sube tal cual a cual
 - **Dominio propio**: en GitHub → Settings → Pages → Custom domain. Después actualiza `canonical`, `og:url`
   y `og:image` en `index.html` con el dominio nuevo.
 
-Cuando cambies CSS o JS, sube el número `?v=5` en las etiquetas `<link>` y `<script>` para que los visitantes no vean versiones en caché.
+Cuando cambies CSS o JS, sube el número `?v=6` en las etiquetas `<link>` y `<script>` para que los visitantes no vean versiones en caché.
 
 ## Cómo fluye una venta
 

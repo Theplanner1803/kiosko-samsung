@@ -472,3 +472,10 @@ legend { font-weight: 600; margin-bottom: 10px; padding: 0; }
 @media (prefers-reduced-motion: reduce) {
   .strip__track { animation: none; overflow-x: auto; width: auto; }
 }
+
+/* Aviso de privacidad simplificado (art. 16 LFPDPPP) */
+.privacy-short { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--bg); border: 1px solid var(--line); }
+.privacy-short p { color: var(--muted); font-size: 0.8rem; line-height: 1.5; }
+.privacy-short strong { color: var(--text); }
+.privacy-short a { color: var(--accent-strong); }
+.pending { background: rgba(255, 122, 69, 0.15); color: var(--warm-strong); padding: 0 5px; border-radius: 5px; }
